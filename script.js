@@ -5,14 +5,20 @@ document.getElementById('themeToggle')?.addEventListener('click', () => {
 });
 
 // Simple API fetch demo (AJAX)
+// Simple API fetch demo (AJAX)
 (async () => {
   const el = document.getElementById('quote');
   if (!el) return;
+
   try {
-    const res = await fetch('https://api.quotable.io/random');
+    const res = await fetch("https://api.quotable.io/quotes/random");
     const data = await res.json();
-    el.textContent = `"${data.content}" — ${data.author}`;
-  } catch {
-    el.textContent = 'Could not load quote.';
+
+    const quote = data[0]; // New API returns an array
+
+    el.textContent = `"${quote.content}" — ${quote.author}`;
+  } catch (err) {
+    console.error(err);
+    el.textContent = "Could not load quote. So have a good break.";
   }
 })();
