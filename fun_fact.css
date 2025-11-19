@@ -1,0 +1,67 @@
+/* General page setup */
+body {
+    background-color: #4b2e15; /* rich brown */
+    color: beige;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container */
+.container {
+    text-align: center;
+    max-width: 700px;
+    padding: 20px;
+}
+
+/* Title */
+h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+/* Fact text */
+#fact {
+    font-size: 24px;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    min-height: 100px;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Fade animation */
+.fade {
+    opacity: 0;
+}
+.show {
+    opacity: 1;
+}
+
+/* Button styling */
+button {
+    background-color: beige;
+    color: #4b2e15;
+    border: none;
+    padding: 14px 28px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.3s ease;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #e8dbb8;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(1.00);
+}
