@@ -1,6 +1,6 @@
 /* General page setup */
 body {
-    background-color: #4b2e15; /* rich brown */
+    background-color: black; /* rich brown */
     color: beige;
     font-family: Arial, sans-serif;
     margin: 0;
@@ -65,3 +65,4 @@ button:hover {
 button:active {
     transform: scale(1.00);
 }
+
